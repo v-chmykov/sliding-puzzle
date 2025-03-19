@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+#pizzle-grid {
+    margin: 0 auto 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    background-color: #ccc;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.pizzle-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 100px;
+    height: 100px;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pizzle-cell.empty {
+    background-color: transparent;
+    cursor: default;
+}
+
+#shuffle-btn {
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#shuffle-btn:hover {
+    background-color: #45a049;
+}
+
+#notification {
+    margin-top: 1rem;
+    color: #666;
+}
